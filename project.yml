@@ -1,0 +1,5 @@
+name: CocoaPodsBitriseIssue
+targets:
+  CocoaPodsBitriseIssue:
+    type: application
+    platform: iOS

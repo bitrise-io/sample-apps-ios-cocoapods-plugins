@@ -1,0 +1,10 @@
+format_version: "8"
+default_step_lib_source: https://github.com/bitrise-io/bitrise-steplib.git
+project_type: ios
+workflows:
+  primary:
+    steps:
+    - cocoapods-install@1.8.0: {}
+  primary-latest:
+    steps:
+    - cocoapods-install: {}
