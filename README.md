@@ -1,5 +1,7 @@
 # CocoaPodsBitriseIssue
 
+See: https://github.com/bitrise-steplib/steps-cocoapods-install/issues/43
+
 This repo demonstrates an issue with [bitrise-steplib/steps-cocoapods-install](https://github.com/bitrise-steplib/steps-cocoapods-install) where it doesn't use bundler to call `pod install`. This is normally not too much of a problem, but if the `Podfile` is using plugins, then without bundler, `pod install` might not find those plugins (which are themselves gems).
 
 Note: You likely need a clean ruby environment for this to manifest. Also, if you use something like `rbenv-bundler`, then you probably won't see this issue since `rbenv-bundler` uses `bundle exec` implicitly.
